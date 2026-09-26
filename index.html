@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Felicity Kate D. Dela Cruz</title>
     <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -127,6 +128,58 @@
             </div>
         </div>
     </section>
+
+    <section class="interactive-section">
+    <div class="container">
+
+        <div class="section-header">
+            <h2 class="section-title">My Skills</h2>
+            <p class="section-subtitle">
+                Explore the skills I am learning and developing
+            </p>
+        </div>
+
+        <div class="skill-controls">
+
+            <div class="skill-search">
+                <input
+                    type="text"
+                    id="skillSearch"
+                    placeholder="Search for a skill..."
+                    aria-label="Search skills"
+                >
+            </div>
+
+            <div class="category-buttons">
+                <button type="button" class="category-btn active" data-category="All">
+                    All
+                </button>
+
+                <button type="button" class="category-btn" data-category="Technical">
+                    Technical
+                </button>
+
+                <button type="button" class="category-btn" data-category="Web Development">
+                    Web Development
+                </button>
+
+                <button type="button" class="category-btn" data-category="Programming">
+                    Programming
+                </button>
+            </div>
+
+            <button type="button" id="resetSkills" class="reset-btn">
+                Reset
+            </button>
+
+        </div>
+
+        <p id="skillMessage" class="skill-message"></p>
+
+        <div id="skillsContainer" class="skills-container"></div>
+
+    </div>
+</section>
 
     
     <footer class="footer">
